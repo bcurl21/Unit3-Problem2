@@ -66,14 +66,14 @@
       view.ui.add(button, 'top-right');
     });
     
-    bei.addEventListener('click', function() {
+    v2.addEventListener('click', function() {
       // reuse the default camera position already established in the homeBtn
       view.goTo({
         target:camera2
       });
     });
     
-    stl.addEventListener('click', function() {
+    v1.addEventListener('click', function() {
       // reuse the default camera position already established in the homeBtn
       view.goTo({
         target:camera
