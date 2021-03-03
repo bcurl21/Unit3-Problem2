@@ -21,20 +21,20 @@
       var camera = new Camera({
         position: [
            -71.060217,
-          42.322655,
-          4000// elevation in meters
+          42.344655,
+          1700// elevation in meters
         ],
         tilt:45,
         heading: 0
       })
       
       var camera2 = new Camera({
-        position: {
-          x: 116.4074,
-          y: 39.9042,
-          z: 5000000
-        },
-        tilt: 0,
+        position: [
+           -71.040217,
+          42.3284655,
+          1850// elevation in meters
+        ],
+        tilt: 45,
         heading: 0
       });
 
@@ -54,14 +54,14 @@
         },
     });
     
-    /*var homeBtn = new Home({
+    var homeBtn = new Home({
         view: view
-      });*/
+      });
 
       // Add the home button to the top left corner of the view
-    view.ui.add(homeBtn, "top-left");
+    /*view.ui.add(homeBtn, "top-left");*/
     
-    [stl, bei].forEach(function(button) {
+    [v1, v2].forEach(function(button) {
       button.style.display = 'flex';
       view.ui.add(button, 'top-right');
     });
